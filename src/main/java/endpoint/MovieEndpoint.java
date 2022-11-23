@@ -16,7 +16,7 @@ public class MovieEndpoint extends MovieServiceGrpc.MovieServiceImplBase {
         MovieLogic ml = new MovieLogic(Genre);
 
 
-        //server stream
+//        server stream
 //        for (int i =0 ; i <5 ; i++){
 //            responseObserver.onNext(ml.response);
 //        }

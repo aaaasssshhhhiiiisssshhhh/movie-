@@ -23,13 +23,30 @@ public class MovieLogic extends MovieServiceGrpc.MovieServiceImplBase {
                 .build());
 
         genre.put("Comedy" , MovieReply.newBuilder()
-                .addMovieDetails(MovieDetail.newBuilder().setName("Mr bean").setDescription("movie about mister bean")).build());
+                .addMovieDetails(MovieDetail.newBuilder().setName("Mr bean").setDescription("movie about mister bean"))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jhosdasdsan").setDescription("Movie about tasdasdhe jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jsadasdasdhon").setDescription("Movie absadasdout the jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The asdas").setDescription("Movie aboutsdasdasd the jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jhsdasdasdon").setDescription("Movie abousadasdast the jhon's life "))
+                .build());
 
         genre.put("Thriller" , MovieReply.newBuilder()
-                .addMovieDetails(MovieDetail.newBuilder().setName("1012").setDescription("world will end")).build());
+                .addMovieDetails(MovieDetail.newBuilder().setName("1012").setDescription("world will end"))
+                .addMovieDetails(MovieDetail.newBuilder().setName("Tsdasdashe Jhasdasdon").setDescription("Movie abosadsdasdut the jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("Tsadasdhe Jhon").setDescription("Movie about the jhosdasdn's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("sadasdhe Jhsdasdon").setDescription("Movie asadasdbout the jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("Thsadasde Jhsadasdon").setDescription("Movie abosadasdut the jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("Tsadashe Jhsdadon").setDescription("Movie absadasdout the jhon's life "))
+
+                .build());
 
         genre.put("Horror" , MovieReply.newBuilder()
-                .addMovieDetails(MovieDetail.newBuilder().setName("1947").setDescription("movie about ghost")).build());
+                .addMovieDetails(MovieDetail.newBuilder().setName("1947").setDescription("movie about ghost"))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jhosdasdasn").setDescription("Movie about the sadasdjhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jhon").setDescription("Movie about the jhon's asdslife "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jsdasdhon").setDescription("Moviesadasd about the jhon's life "))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The Jhonasda").setDescription("Movie about the jhon's life "))
+                .build());
 
         genre.forEach((k,v) ->{
             if(k.equals(Genre)){

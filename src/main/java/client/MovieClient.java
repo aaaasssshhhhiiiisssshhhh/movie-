@@ -28,7 +28,7 @@ public class MovieClient {
         MovieServiceGrpc.MovieServiceBlockingStub client =
                 MovieServiceGrpc.newBlockingStub(channel);
 
-        GenreRequest request = GenreRequest.newBuilder().setGenre("Horror").build();
+        GenreRequest request = GenreRequest.newBuilder().setGenre("Comedy").build();
 
 
         //unary
