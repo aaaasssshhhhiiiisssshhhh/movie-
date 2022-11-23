@@ -18,12 +18,18 @@ public class MovieLogic extends MovieServiceGrpc.MovieServiceImplBase {
         Map<String, MovieReply> genre =  new HashMap<>();
 
         genre.put("Action" , MovieReply.newBuilder()
-                .addMovieDetails(MovieDetail.newBuilder().setName("ram").setDescription("sita"))
-                        .addMovieDetails(MovieDetail.newBuilder().setName("ramdasd").setDescription("sitasdasd"))
+                .addMovieDetails(MovieDetail.newBuilder().setName("The rock").setDescription("Movie about the rock"))
+                        .addMovieDetails(MovieDetail.newBuilder().setName("The Jhon").setDescription("Movie about the jhon's life "))
                 .build());
 
         genre.put("Comedy" , MovieReply.newBuilder()
-                .addMovieDetails(MovieDetail.newBuilder().setName("hello").setDescription("rita")).build());
+                .addMovieDetails(MovieDetail.newBuilder().setName("Mr bean").setDescription("movie about mister bean")).build());
+
+        genre.put("Thriller" , MovieReply.newBuilder()
+                .addMovieDetails(MovieDetail.newBuilder().setName("1012").setDescription("world will end")).build());
+
+        genre.put("Horror" , MovieReply.newBuilder()
+                .addMovieDetails(MovieDetail.newBuilder().setName("1947").setDescription("movie about ghost")).build());
 
         genre.forEach((k,v) ->{
             if(k.equals(Genre)){
